@@ -1,47 +1,85 @@
-# Lan-House- 💥
-Software de lan house Timer Café 
+# 🖥️ Lan-House - Projeto Integrador
 
-- Projeto se baseando em uma *lan house* voltado a jogos antigos. 🚀 :)
+## 📌 Sobre o Projeto
+Este projeto tem como objetivo montar uma Lan-House completa, utilizando computadores antigos, com sistema operacional Linux, simulando como funcionavam as lan houses antigas, mas com tecnologia atual e de baixo custo.
 
-## O que iremos ultilizar 🤔❓
+A ideia é reviver a experiência das lan houses, onde as pessoas se reuniam para jogar em rede, com controle de tempo por computador.
 
-- Windows 11 Pro (de preferencia) ⚡
-- 8 computadores e 1 servidor
-- Necessário 1 integrante de cada grupo ajudar com a montagem do servidor 
-- PCS da positivo, reparar se necessário e padronizar as configurações.
-- Escolher um jogo antigo (de preferencia) 
+## 🎯 Objetivo
+- Montar uma rede local com 8 PCs + 1 servidor
+- Instalar Linux em PCs antigos para reaproveitamento
+- Instalar e configurar o jogo Urban Terror para jogar em rede
+- Utilizar o Timer Café no servidor para controlar o tempo de uso de cada PC
+- Proporcionar uma experiência de lan house real
 
-## Autores do projeto 📝
-- Gabriella
-- Jamile
-- Millena
-- Raphaella
-- Gabriel
+## 🛠️ O que iremos utilizar
+- 8 Computadores Positivo (antigos)
+- 1 Computador para Servidor
+- Switch / Roteador para interligar os PCs
+- Cabos de rede RJ45
+- Sistema Operacional: Linux (versão leve para PCs antigos, como Lubuntu / Linux Mint XFCE)
+- Jogo: Urban Terror
+- Software de controle: Timer Café (no servidor)
 
+## 🖥️ Servidor
+O servidor será o computador principal da lan house. Ele será responsável por:
+- Hospedar a partida do Urban Terror
+- Rodar o Timer Café para controlar o tempo de uso
+- Mostrar quanto tempo cada PC tem restante
+- Travar / liberar os computadores
 
------------------------
-## Objetivo
-Nosso principal objetivo seria conseguir desenvolver uma lan house com conhecimentos dados em sala de aula, visando mostrar o grande lado positivo na ultilidade de computadores antigos também para uso de diversão trazendo nostalgia aos consumidores do projeto. 
+**Funcionamento do Timer Café:**
+1. O Timer Café é instalado no servidor (programa principal)
+2. O cliente é instalado nos 8 PCs
+3. Cada PC se conecta ao servidor pelo IP da rede local
+4. No servidor, é possível ver todos os PCs, liberar tempo e acompanhar o uso
+5. Quando o tempo acaba, o PC é bloqueado / deslogado automaticamente
+6. Uso demonstrativo, sem cobrança real, apenas para controle de tempo da partida
 
-## Jogo Escolhido
-   urban terror
+## 🎮 Jogo Escolhido: Urban Terror
+Escolhemos o Urban Terror porque:
+- É leve e roda bem em PCs antigos
+- É gratuito
+- Tem modo multiplayer em rede local (LAN)
+- Tem versão para Linux, sem precisar de emulador
 
+## 💻 Como instalar o Urban Terror no Linux
+1. Baixar a versão de Linux do Urban Terror no site oficial
+2. Extrair o arquivo baixado
+3. Dar permissão de execução no arquivo do jogo
+4. Instalar as dependências que faltarem
+5. Abrir o jogo e criar / entrar em uma partida em rede
+6. No servidor: criar a partida
+7. Nos outros PCs: entrar pelo IP do servidor
 
+## 🌐 Rede / Topologia
+Servidor (192.168.0.1) -> Switch -> PC 01 até PC 08
 
-* [https://www.urbanterror.info/home/ ](https://www.urbanterror.info/home/)
+Todos os computadores estarão na mesma rede local, com IP fixo, para facilitar a conexão do jogo e do Timer Café.
 
+## ⚠️ Dificuldades Encontradas e Como Resolvemos
 
+### 1. PCs que às vezes não ligavam
+Alguns computadores apresentavam falhas ao ligar, não davam vídeo ou desligavam sozinhos.
 
-* [https://www.urbanterror.info/downloads/#1](https://www.urbanterror.info/downloads/#1)
+**O que fizemos:**
+Testamos a fonte, limpamos a memória RAM e os contatos com borracha, trocamos os cabos de energia e verificamos as conexões internas. Depois da limpeza e dos testes, os PCs voltaram a ligar normalmente.
 
+### 2. Dificuldade para instalar o Urban Terror no Linux
+Por serem PCs antigos com Linux, tivemos dificuldade na instalação, pois o jogo não estava abrindo direto e faltavam algumas dependências / bibliotecas.
 
+**O que fizemos:**
+Baixamos a versão correta para Linux, extraímos os arquivos, demos permissão de execução e instalamos as dependências que faltavam. Depois disso, o jogo abriu e conseguimos testar a partida em rede.
 
-* #### **Como instalar**
-- Baixe o arquivo compactado de sua escolha abaixo e extraia a pasta UrbanTerror43 para o local desejado.#
+## ✅ Resultado
+Conseguimos montar a rede, instalar o Linux nos PCs, instalar o Urban Terror e testar o jogo em rede local com o controle de tempo pelo servidor, simulando o funcionamento de uma lan house real.
 
-- Em seguida, execute o UrTUpdater , siga as instruções na tela e você deverá estar baixando a versão mais recente do Urban Terror 4.3
-O UrTUpdater pode fazer duas coisas:
+## 📚 Conclusão
+Com este projeto, aprendemos a reaproveitar computadores antigos, configurar uma rede local, instalar e configurar Linux, resolver problemas de hardware e software e trabalhar em equipe para montar uma lan house funcional.
 
-- Instalar uma nova cópia do Urban Terror 4.3.
-
-- Manter o seu Urban Terror 4.3 atualizado.
+## 👥 Autores
+- Rafaela
+- Gabriela
+- Millena 
+- Gabriel 
+- ⁠Jamile
